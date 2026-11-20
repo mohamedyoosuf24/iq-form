@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | DressIQ | Luxury Fashion</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Jost:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <-- <script> -->
+      // Change these 3 colours to match your main site's CSS
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ivory: "#faf6f0",
+              ink: "#1a1614",
+              gold: "#b08d57",
+              stone: "#6f665e",
+              rule: "#e4dccf",
+            },
+            fontFamily: {
+              display: ['"Cormorant Garamond"', "serif"],
+              body: ["Jost", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      input:focus,
+      select:focus,
+      textarea:focus {
+        outline: none;
+        border-color: #b08d57;
+      }
+    </style>
+  </head>
+<!-- ANNOUNCEMENT BAR -->
+<div class="topbar">
+    COMPLIMENTARY DELIVERY ON ORDERS ABOVE ₹2,999 ✦ MADE FOR YOUR MOMENT
+</div>
+
+<!-- NAVBAR -->
+<header class="header">
+    <div class="header-inner">
+
+        <button class="menu-toggle" id="menuToggle">☰</button>
+
+        <a href="#home" class="logo">
+            Dress<span>IQ</span>
+            <small>THE ART OF BEING YOU</small>
+        </a>
+
+        <nav id="mainNav">
+            <a href="#home">HOME</a>
+            <a href="#collections">COLLECTIONS</a>
+            <a href="#edit">NEW ARRIVALS</a>
+            <a href="#story">OUR STORY</a>
+        </nav>
+
+        <div class="header-icons">
+            <a href="#edit">⌕</a>
+            <a href="cart.html">♡</a>
+            <a href="cart.html">BAG</a>
+        </div>
+
+    </div>
+</header>
+
+<main>
+
+ 
+
+    <!-- Contact section -->
+    <main
+      class="max-w-6xl mx-auto px-6 py-16 md:py-24 grid gap-14 lg:grid-cols-[1fr_1.2fr] lg:gap-20"
+    >
+      <!-- Left: intro -->
+      <section>
+        <p class="text-[11px] tracking-[0.25em] text-gold">
+          ✦ WE’D LOVE TO HEAR FROM YOU
+        </p>
+        <h1 class="font-display text-5xl md:text-6xl leading-[1.05] mt-5">
+          Let’s talk, <em class="text-gold">your</em> way.
+        </h1>
+        <p class="mt-6 text-stone leading-relaxed max-w-md">
+          Sizing, styling, an order, or a custom idea. Send us a note and a
+          member of the DressIQ team will reply within one working day.
+        </p>
+      </section>
+
+      <!-- Right: form -->
+      <section>
+        <form id="contactForm" novalidate class="space-y-7">
+          <div class="grid gap-7 sm:grid-cols-2">
+            <div>
+              <label for="name" class="block text-[11px] tracking-[0.2em] mb-2"
+                >FULL NAME</label
+              >
+              <input
+                id="name"
+                name="name"
+                type="text"
+                required
+                autocomplete="name"
+                class="w-full bg-transparent border-b border-ink/30 py-2.5 transition placeholder:text-stone/60"
+                placeholder="Your name"
+              />
+            </div>
+            <div>
+              <label for="email" class="block text-[11px] tracking-[0.2em] mb-2"
+                >EMAIL</label
+              >
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                autocomplete="email"
+                class="w-full bg-transparent border-b border-ink/30 py-2.5 transition placeholder:text-stone/60"
+                placeholder="you@example.com"
+              />
+            </div>
+          </div>
+
+          <div class="grid gap-7 sm:grid-cols-2">
+            <div>
+              <label for="phone" class="block text-[11px] tracking-[0.2em] mb-2"
+                >PHONE <span class="text-stone">(OPTIONAL)</span></label
+              >
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                autocomplete="tel"
+                class="w-full bg-transparent border-b border-ink/30 py-2.5 transition placeholder:text-stone/60"
+                placeholder="+91"
+              />
+            </div>
+            <div>
+              <label for="topic" class="block text-[11px] tracking-[0.2em] mb-2"
+                >WHAT’S IT ABOUT?</label
+              >
+              <select
+                id="topic"
+                name="topic"
+                required
+                class="w-full bg-transparent border-b border-ink/30 py-2.5 transition"
+              >
+                <option value="">Choose a topic</option>
+                <option>Order or delivery</option>
+                <option>Size and fit help</option>
+                <option>Returns and exchanges</option>
+                <option>Styling advice</option>
+                <option>Custom tailoring</option>
+                <option>Something else</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="order" class="block text-[11px] tracking-[0.2em] mb-2"
+              >ORDER NUMBER
+              <span class="text-stone">(IF YOU HAVE ONE)</span></label
+            >
+            <input
+              id="order"
+              name="order"
+              type="text"
+              class="w-full bg-transparent border-b border-ink/30 py-2.5 transition placeholder:text-stone/60"
+              placeholder="e.g. DIQ-10482"
+            />
+          </div>
+
+          <div>
+            <label for="message" class="block text-[11px] tracking-[0.2em] mb-2"
+              >MESSAGE</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              class="w-full bg-transparent border-b border-ink/30 py-2.5 transition resize-y placeholder:text-stone/60"
+              placeholder="Tell us what you need"
+            ></textarea>
+          </div>
+
+          <p id="error" role="alert" class="hidden text-sm text-red-700"></p>
+
+          <button
+            type="submit"
+            id="submitBtn"
+            class="bg-ink text-ivory text-xs tracking-[0.22em] px-10 py-4 hover:bg-gold transition w-full sm:w-auto"
+          >
+            SEND MESSAGE ↗
+          </button>
+        </form>
+
+        <!-- Success state -->
+        <div id="success" role="status" class="hidden py-10">
+          <p class="text-[11px] tracking-[0.25em] text-gold">✦ MESSAGE SENT</p>
+          <h2 class="font-display text-4xl mt-4">
+            Thank you, <em id="who" class="text-gold"></em>.
+          </h2>
+          <p class="text-stone mt-4 max-w-sm">
+            We’ll reply to <span id="where" class="text-ink"></span> within one
+            working day.
+          </p>
+          <button
+            id="again"
+            type="button"
+            class="mt-8 text-xs tracking-[0.2em] border-b border-ink pb-1 hover:text-gold hover:border-gold transition"
+          >
+            SEND ANOTHER MESSAGE
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+     <footer class="footer">
+
+    <div class="footer-grid">
+
+        <div>
+            <a href="#home" class="logo footer-logo">
+                Dress<span>IQ</span>
+                <small>THE ART OF BEING YOU</small>
+            </a>
+            <p>For every mood. For every moment.</p>
+        </div>
+
+        <div>
+            <h4>DISCOVER</h4>
+            <a href="#collections">Women</a>
+            <a href="#collections">Men</a>
+            <a href="#edit">New Arrivals</a>
+        </div>
+
+        <div>
+            <h4>THE HOUSE</h4>
+            <a href="#story">Our Story</a>
+            <a href="contact.html">Contact</a>
+            <a href="#home">Back to top ↑</a>
+        </div>
+
+        <div>
+            <h4>FOLLOW US</h4>
+            <p>Instagram · Pinterest · Facebook</p>
+            <p>Fashion is better when it's yours.</p>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 DRESSIQ. ALL RIGHTS RESERVED.
+    </div>
+
+</footer>
+    
+
+    <script src="contact.js"></script>
+  </body>
+</html>

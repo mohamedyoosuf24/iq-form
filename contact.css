@@ -1,0 +1,159 @@
+:root {
+    --cream: #fbf8f1;
+    --gold: #b99555;
+    --light-gold: #e9d8b5;
+    --dark: #28251f;
+    --beige: #eee8dd;
+    --white: #fffefa;
+    --muted: #817b70;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--dark);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* ANNOUNCEMENT */
+
+.topbar {
+    background: var(--dark);
+    color: #f5e9ce;
+    text-align: center;
+    padding: 11px;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+/* NAVBAR */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #fbf8f1f5;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid #e9e2d6;
+}
+
+.header-inner {
+    max-width: 1350px;
+    height: 85px;
+    margin: auto;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font: 600 34px 'Playfair Display', serif;
+    letter-spacing: -2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo span {
+    color: var(--gold);
+}
+
+.logo small {
+    font: 7px 'DM Sans', sans-serif;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+.header-icons {
+    display: flex;
+    gap: 22px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 23px;
+}
+/* FOOTER */
+
+.footer {
+    background: #201e1a;
+    color: #c4bcaf;
+    padding: 60px 7% 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+.footer-grid h4 {
+    color: var(--light-gold);
+    font-size: 9px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.footer-grid a:not(.logo) {
+    display: block;
+    font-size: 11px;
+    margin: 12px 0;
+}
+
+.footer-grid p {
+    font-size: 11px;
+    line-height: 2;
+    margin-top: 15px;
+}
+
+.footer-logo {
+    color: white;
+}
+
+.copyright {
+    border-top: 1px solid #514b40;
+    padding-top: 20px;
+    font-size: 8px;
+    letter-spacing: 1.5px;
+}
